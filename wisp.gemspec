@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["@hirekoke", "Yusuke Endoh"]
-  gem.email         = ["XXX", "mame@tsg.ne.jp"]
-  gem.description   = %q{XXX: Write a gem description}
-  gem.summary       = %q{XXX: Write a gem summary}
-  gem.homepage      = ""
+  gem.authors       = ["hirekoke", "Yusuke Endoh"]
+  gem.email         = ["hirekoke@yahoo.co.jp", "mame@tsg.ne.jp"]
+  gem.description   = %q{Ruby extension library for visualizing the line that is currently running}
+  gem.summary       = gem.description
+  gem.homepage      = "https://github.com/hirekoke/Wisp"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
