@@ -13,4 +13,7 @@ Gem::Specification.new do |gem|
   gem.name          = "wisp"
   gem.require_paths = ["lib"]
   gem.version       = "0.1.0"
+
+  gem.add_runtime_dependency "sinatra", [">= 1.3.2"]
+  gem.add_runtime_dependency "sinatra-websocket", [">= 0.1.2"]
 end
