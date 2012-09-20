@@ -94,7 +94,7 @@ class << $stdout
 
   def write(s)
     @buff ||= ""
-    @buff << s
+    @buff << s.to_s
     while idx = @buff.index("\n")
       Wisp.output(@buff.slice!(0, idx + 1).chomp)
     end
@@ -107,7 +107,7 @@ class << $stderr
 
   def write(s)
     @buff ||= ""
-    @buff << s
+    @buff << s.to_s
     while idx = @buff.index("\n")
       Wisp.error(@buff.slice!(0, idx + 1).chomp)
     end
